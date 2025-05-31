@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+# pip3 install xmljson
+import sys, json
+from xmljson import badgerfish as bf
+from xml.etree.ElementTree import parse
+print(json.dumps(bf.data(parse(sys.stdin).getroot())))
